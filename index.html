@@ -9,7 +9,11 @@
     
     <p>Testing JSPDF</p>
     
-    <a href="javascript:genPDF()">Download PDF</a>
+    <input type="text" id="name" value="" placeholder="Name"><br>
+    <input type="text" id="company" value="" placeholder="Comany"><br>
+    <input type="text" id="department" value="" placeholder="department"><br>
+    <input type="text" id="title" value="" placeholder="job title"><br>
+    <button onclick="genPDF()">Submit</button>
     
     
     
@@ -21,6 +25,8 @@
     
     
     
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="jspdf.min.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
     
