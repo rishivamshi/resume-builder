@@ -3,15 +3,21 @@ function genPDF() {
     var doc = new jsPDF();
     
     var name = $('#name').val();
-    var company = $('#company').val();
-    var department = $('#department').val();
-    var title = $('#title').val();
+    var jobTitle = $('#jobTitle').val();
+    var phone = $('#phone').val();
+    var address = $('#address').val();
+    var email = $('#email').val();
+    var aboutYou = $('#aboutYou').val();
+    
+    
     
     doc.setFontSize(30);
     doc.text(20,20,name);
-    doc.text(20,40,company);
-    doc.text(20,60,department);
-    doc.text(20,80,title);
+    doc.text(20,40,jobTitle);
+    doc.text(20,60,phone);
+    doc.text(20,80,address);
+    doc.text(20,120,email);
+    doc.text(20,140,aboutYou);
     
     doc.save('test.pdf');
     
