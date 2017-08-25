@@ -43,6 +43,20 @@ function genPDF() {
     var language4 = $('#language4').val();
     var language5 = $('#language5').val();
     var language6 = $('#language6').val();
+    
+    // Projects
+    var proTitle1 = $('#proTitle1').val();
+    var proDes1 = $('#proDes1').val();
+    var proTitle2 = $('#proTitle2').val();
+    var proDes2 = $('#proDes2').val();
+    var proTitle3 = $('#proTitle3').val();
+    var proDes3 = $('#proDes3').val();
+    var proTitle4 = $('#proTitle4').val();
+    var proDes4 = $('#proDes4').val();
+    var proTitle5 = $('#proTitle5').val();
+    var proDes5 = $('#proDes5').val();
+    var proTitle6 = $('#proTitle6').val();
+    var proDes6 = $('#proDes6').val();
   
     doc.text(20,20,name);
     doc.text(20,40,jobTitle);
@@ -79,6 +93,22 @@ function genPDF() {
     doc.text(20,80,language4);
     doc.text(20,80,language5);
     doc.text(20,80,language6);
+    
+    
+    doc.text(20,20,proTitle1);
+    doc.text(40,20,proDes1)
+    doc.text(20,40,proTitle2);
+    doc.text(40,40,proDes2)
+    doc.text(20,60,proTitle3);
+    doc.text(40,60,proDes3)
+    doc.text(20,80,proTitle4);
+    doc.text(40,80,proDes4)
+    doc.text(20,100,proTitle5);
+    doc.text(40,100,proDes5)
+    doc.text(20,120,proTitle6);
+    doc.text(40,120,proDes6)
+    
+    
     
     
     
