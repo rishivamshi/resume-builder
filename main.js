@@ -26,8 +26,19 @@ function genPDF() {
     var year3 = $('#year3').val();
     var percentage3 = $('#percentage3').val();
     
+    //skill set prime
     
+    var skillset1 = $('#skillset1').val();
+    var skillset2 = $('#skillset2').val();
+    var skillset3 = $('#skillset3').val();
+    var skillset4 = $('#skillset4').val();
     
+//skill language
+    
+    var language1 = $('#language1').val();
+    var language2 = $('#language2').val();
+    var language3 = $('#language3').val();
+    var language4 = $('#language4').val();
   
     doc.text(20,20,name);
     doc.text(20,40,jobTitle);
@@ -51,7 +62,15 @@ function genPDF() {
     doc.text(90,200,percentage3);
     doc.text(100,200,year3);
     
-    
+    doc.text(20,220,skillset1);
+    doc.text(20,240,skillset2);
+    doc.text(20,260,skillset3);
+    doc.text(20,280,skillset4);
+    doc.addPage();
+    doc.text(20,20,language1);
+    doc.text(20,40,language2);
+    doc.text(20,60,language3);
+    doc.text(20,80,language4);
     
     
     
