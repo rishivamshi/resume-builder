@@ -32,6 +32,8 @@ function genPDF() {
     var skillset2 = $('#skillset2').val();
     var skillset3 = $('#skillset3').val();
     var skillset4 = $('#skillset4').val();
+    var skillset5 = $('#skillset5').val();
+    var skillset6 = $('#skillset6').val();
     
 //skill language
     
@@ -39,6 +41,8 @@ function genPDF() {
     var language2 = $('#language2').val();
     var language3 = $('#language3').val();
     var language4 = $('#language4').val();
+    var language5 = $('#language5').val();
+    var language6 = $('#language6').val();
   
     doc.text(20,20,name);
     doc.text(20,40,jobTitle);
@@ -66,11 +70,15 @@ function genPDF() {
     doc.text(20,240,skillset2);
     doc.text(20,260,skillset3);
     doc.text(20,280,skillset4);
+    doc.text(20,280,skillset5);
+    doc.text(20,280,skillset6);
     doc.addPage();
     doc.text(20,20,language1);
     doc.text(20,40,language2);
     doc.text(20,60,language3);
     doc.text(20,80,language4);
+    doc.text(20,80,language5);
+    doc.text(20,80,language6);
     
     
     
