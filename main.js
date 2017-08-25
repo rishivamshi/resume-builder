@@ -58,6 +58,11 @@ function genPDF() {
     var proTitle6 = $('#proTitle6').val();
     var proDes6 = $('#proDes6').val();
   
+    // extra curricular activities
+    var extracur = $('#extracur').val();
+    
+    
+    
     doc.text(20,20,name);
     doc.text(20,40,jobTitle);
     doc.text(20,60,phone);
@@ -108,7 +113,7 @@ function genPDF() {
     doc.text(20,120,proTitle6);
     doc.text(40,120,proDes6)
     
-    
+    doc.text(20,20,extracur);
     
     
     
