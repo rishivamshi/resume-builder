@@ -61,6 +61,16 @@ function genPDF() {
     // extra curricular activities
     var extracur = $('#extracur').val();
     
+    // personal and parent details
+    
+    var age = $('#age').val();
+    var dob = $('#dob').val();
+    var fathersName = $('#fathersName').val();
+    var mothersName = $('#mothersName').val();
+    var permAddress = $('#permAddress').val();
+    var langKnown = $('#langKnown').val();
+    var altPhone = $('#altPhone').val();
+    
     
     
     doc.text(20,20,name);
@@ -114,6 +124,14 @@ function genPDF() {
     doc.text(40,120,proDes6)
     
     doc.text(20,20,extracur);
+    doc.addPage();
+    doc.text(20,20,age);
+    doc.text(20,40,dob);
+    doc.text(20,60,fathersName);
+    doc.text(20,80,mothersName);
+    doc.text(20,100,permAddress);
+    doc.text(20,120,langKnown);
+    doc.text(20,140,altPhone);
     
     
     
